@@ -7,7 +7,7 @@ function App() {
     const mockEvents = [
         {
             title: '周杰倫-嘉年華 世界巡迴演唱會',
-            date: '2025/08/12',
+            date: '2025/06/27-7/29',
             location: '台北小巨蛋',
             image: '/images/周杰倫演唱會.png',
         },

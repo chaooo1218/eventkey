@@ -1,4 +1,6 @@
 ﻿import React from 'react';
+import { FaTicketAlt } from 'react-icons/fa'; // ✅ 新增這行來使用票卷圖示
+
 
 interface EventCardProps {
     title: string;
@@ -15,7 +17,28 @@ const EventCard: React.FC<EventCardProps> = ({ title, date, location, image, onB
             <h3>{title}</h3>
             <p>{date}</p>
             <p>{location}</p>
-            <button onClick={onBuy}>🎟️ 購票</button>
+            <button
+                onClick={onBuy}
+                style={{
+                    backgroundColor: '#1e40af',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '8px',
+                    padding: '10px 20px',
+                    fontSize: '16px',
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    transition: 'transform 0.2s, backgroundColor 0.2s',
+                }}
+                onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#2563eb')}
+                onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#1e40af')}
+            >
+                <FaTicketAlt />
+                購票
+            </button>
+
         </div>
     );
 };
