@@ -1,6 +1,6 @@
 ﻿import './App.css';
-import WalletButton from './components/WalletButton';
 import EventCard from './components/EventCard';
+import Navbar from './components/Navbar';
 
 
 function App() {
@@ -22,31 +22,24 @@ function App() {
     const handleBuy = (eventTitle: string) => {
         alert(`你已購買：${eventTitle}`);
     };
-
     return (
         <>
-            <div style={{ position: 'fixed', top: 16, right: 16, zIndex: 1000 }}>
-                <WalletButton />
-            </div>
-        <div style={{ padding: 28 }}>
-            <h1>🎫 EventKey - Web3 去中心化售票平台
-
-            </h1>
-            <p>探索正在售票的演唱會...
-
-            </p>
-            <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
-                {mockEvents.map((e, i) => (
-                    <EventCard
-                        key={i}
-                        title={e.title}
-                        date={e.date}
-                        location={e.location}
-                        image={e.image}
-                        onBuy={() => handleBuy(e.title)}
-                    />
-                ))}
-            </div>
+            <Navbar /> {/* ✅ 導覽列放最上面 */}
+            <div style={{ padding: 28 }}>
+                <h1>🎫 EventKey - Web3 去中心化售票平台</h1>
+                <p>探索正在售票的演唱會...</p>
+                <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
+                    {mockEvents.map((e, i) => (
+                        <EventCard
+                            key={i}
+                            title={e.title}
+                            date={e.date}
+                            location={e.location}
+                            image={e.image}
+                            onBuy={() => handleBuy(e.title)}
+                        />
+                    ))}
+                </div>
             </div>
         </>
     );
