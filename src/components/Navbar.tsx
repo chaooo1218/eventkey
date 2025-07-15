@@ -1,10 +1,11 @@
 ﻿import WalletButton from './WalletButton';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <nav style={{
-            width: '100%',
-            backgroundColor: '#1E3A8A',
+            width: '95%',
+            backgroundColor: '#6f439c',
             padding: '12px 24px',
             display: 'flex',
             justifyContent: 'space-between',
@@ -20,7 +21,9 @@ const Navbar = () => {
             </div>
 
             <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
-                <a href="#" style={{ color: 'white', textDecoration: 'none' }}>我的票券</a>
+                <Link to="/my-tickets" style={{ color: 'white', textDecoration: 'none' }}>
+                    我的票券
+                </Link>
                 <a href="#" style={{ color: 'white', textDecoration: 'none' }}>讓票轉售</a>
                 <WalletButton />
             </div>
