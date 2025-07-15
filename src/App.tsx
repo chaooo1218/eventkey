@@ -1,0 +1,55 @@
+﻿import './App.css';
+import WalletButton from './components/WalletButton';
+import EventCard from './components/EventCard';
+
+
+function App() {
+    const mockEvents = [
+        {
+            title: '周杰倫-嘉年華 世界巡迴演唱會',
+            date: '2025/08/12',
+            location: '台北小巨蛋',
+            image: '/images/周杰倫演唱會.png',
+        },
+        {
+            title: 'BLACKPINK Born Pink Encore',
+            date: '2025/09/05',
+            location: '高雄國家體育場',
+            image: 'https://fakeimg.pl/300x200/?text=BLACKPINK',
+        },
+    ];
+
+    const handleBuy = (eventTitle: string) => {
+        alert(`你已購買：${eventTitle}`);
+    };
+
+    return (
+        <>
+            <div style={{ position: 'fixed', top: 16, right: 16, zIndex: 1000 }}>
+                <WalletButton />
+            </div>
+        <div style={{ padding: 28 }}>
+            <h1>🎫 EventKey - Web3 去中心化售票平台
+
+            </h1>
+            <p>探索正在售票的演唱會...
+
+            </p>
+            <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
+                {mockEvents.map((e, i) => (
+                    <EventCard
+                        key={i}
+                        title={e.title}
+                        date={e.date}
+                        location={e.location}
+                        image={e.image}
+                        onBuy={() => handleBuy(e.title)}
+                    />
+                ))}
+            </div>
+            </div>
+        </>
+    );
+}
+
+export default App;
