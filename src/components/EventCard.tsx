@@ -20,7 +20,7 @@ const EventCard: React.FC<EventCardProps> = ({ title, date, location, image, onB
             <button
                 onClick={onBuy}
                 style={{
-                    backgroundColor: '#1e40af',
+                    backgroundColor: '	#1e1e2f',
                     color: 'white',
                     border: 'none',
                     borderRadius: '8px',

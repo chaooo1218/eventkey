@@ -24,11 +24,12 @@ function App() {
     };
     return (
         <>
+            <div style={{ backgroundColor: '#e6f0ff', minHeight: '100vh' }}>
             <Navbar /> {/* 導覽列放最上面 */}
             <div style={{ padding: '100px 28px 28px 28px' }}>
                 <h1>🔏 EventKey - Web3 去中心化售票平台</h1>
                 <p>探索正在售票的演唱會...</p>
-                <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: 24, flexWrap:'wrap' }}>
                     {mockEvents.map((e, i) => (
                         <EventCard
                             key={i}
@@ -41,7 +42,8 @@ function App() {
                     ))}
                 </div>
             </div>
-        </>
+        </div>
+      </>
     );
 }
 
