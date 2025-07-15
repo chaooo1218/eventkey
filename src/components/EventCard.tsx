@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FaTicketAlt } from 'react-icons/fa';
 
 interface EventCardProps {
@@ -6,10 +7,17 @@ interface EventCardProps {
     date: string;
     location: string;
     image: string;
-    onBuy: () => void;
 }
 
-const EventCard: React.FC<EventCardProps> = ({ title, date, location, image, onBuy }) => {
+const EventCard: React.FC<EventCardProps> = ({ title, date, location, image }) => {
+    const navigate = useNavigate();
+
+    const handleBuyClick = () => {
+        navigate('/purchase', {
+            state: { title, date, location, image } // 傳送資料到購票頁
+        });
+    };
+
     return (
         <div
             style={{
@@ -23,7 +31,6 @@ const EventCard: React.FC<EventCardProps> = ({ title, date, location, image, onB
                 backgroundColor: 'white',
             }}
         >
-            {/* 上半部：內容區塊 */}
             <div>
                 <img src={image} alt={title} style={{ width: '100%', borderRadius: 8, height: 180, objectFit: 'cover' }} />
                 <h3 style={{ marginTop: 12 }}>{title}</h3>
@@ -31,10 +38,9 @@ const EventCard: React.FC<EventCardProps> = ({ title, date, location, image, onB
                 <p>{location}</p>
             </div>
 
-            {/* 下半部：購票按鈕置中 */}
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: 20 }}>
                 <button
-                    onClick={onBuy}
+                    onClick={handleBuyClick}
                     style={{
                         backgroundColor: '#1e1e2f',
                         color: 'white',
