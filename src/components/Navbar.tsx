@@ -27,7 +27,6 @@ const Navbar = () => {
                 <Link to="/resell" style={{ color: 'white', textDecoration: 'none' }}>
                     讓票轉售
                 </Link>
-                <a href="#" style={{ color: 'white', textDecoration: 'none' }}>讓票轉售</a>
                 <WalletButton />
             </div>
         </nav>
