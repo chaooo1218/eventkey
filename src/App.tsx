@@ -15,7 +15,7 @@ function App() {
             title: 'BLACKPINK Born Pink Encore',
             date: '2025/09/05',
             location: '高雄國家體育場',
-            image: 'https://fakeimg.pl/300x200/?text=BLACKPINK',
+            image: '/images/BLACKPINK.png',
         },
     ];
 
