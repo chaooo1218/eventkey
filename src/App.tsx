@@ -18,7 +18,7 @@ const mockEvents = [
 
 const App = () => {
     return (
-        <div style={{ backgroundColor: '#e8edff', minHeight: '100vh' }}>
+        <div style={{ backgroundColor: '#e8edff', minHeight: '100vh', width: '100vw'}}>
             <Navbar />
             <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '100px 28px 28px 28px' }}>
                 <h1>🎫 EventKey - Web3 去中心化售票平台</h1>

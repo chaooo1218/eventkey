@@ -29,9 +29,10 @@ const ResellPage = () => {
             <div
                 style={{
                     backgroundColor: '#1f1c1c',
-                    minHeight: '110vh',
+                    minHeight: '100vh',
+                    width: '100vw',
                     padding: '100px 32px 32px',
-                    color: '#e3dede', // ✅ 全白文字
+                    color: '#ede8e8',
                 }}
             >
                 <h1>🔄 讓票轉讓（驗證碼 + 掃碼模式）</h1>
