@@ -28,10 +28,10 @@ const ResellPage = () => {
             <Navbar /> {/* ✅ 保留導覽列 */}
             <div
                 style={{
-                    backgroundColor: '#000', // ✅ 黑底
-                    minHeight: '100vh',
+                    backgroundColor: '#1f1c1c',
+                    minHeight: '110vh',
                     padding: '100px 32px 32px',
-                    color: 'white', // ✅ 全白文字
+                    color: '#e3dede', // ✅ 全白文字
                 }}
             >
                 <h1>🔄 讓票轉讓（驗證碼 + 掃碼模式）</h1>
