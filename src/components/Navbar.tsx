@@ -6,7 +6,6 @@ const Navbar = () => {
         <nav
             style={{
                 width: '100%',
-                height: '100%',
                 backgroundColor: '#6f439c',
                 padding: '12px 24px',
                 display: 'flex',
