@@ -10,9 +10,11 @@
     <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint .</PackageJsonScriptsLint>
     <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
     <PackageJsonDependenciesRainbowMeRainbowkit Condition="$(PackageJsonDependenciesRainbowMeRainbowkit) == ''">^2.2.8</PackageJsonDependenciesRainbowMeRainbowkit>
+    <PackageJsonDependenciesHtml5Qrcode Condition="$(PackageJsonDependenciesHtml5Qrcode) == ''">^2.3.8</PackageJsonDependenciesHtml5Qrcode>
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^19.1.0</PackageJsonDependenciesReact>
     <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^19.1.0</PackageJsonDependenciesReactDom>
     <PackageJsonDependenciesReactIcons Condition="$(PackageJsonDependenciesReactIcons) == ''">^5.5.0</PackageJsonDependenciesReactIcons>
+    <PackageJsonDependenciesReactQrCode Condition="$(PackageJsonDependenciesReactQrCode) == ''">^2.0.18</PackageJsonDependenciesReactQrCode>
     <PackageJsonDependenciesReactRouterDom Condition="$(PackageJsonDependenciesReactRouterDom) == ''">^7.6.3</PackageJsonDependenciesReactRouterDom>
     <PackageJsonDependenciesViem Condition="$(PackageJsonDependenciesViem) == ''">^2.32.0</PackageJsonDependenciesViem>
     <PackageJsonDependenciesWagmi Condition="$(PackageJsonDependenciesWagmi) == ''">^2.15.7</PackageJsonDependenciesWagmi>

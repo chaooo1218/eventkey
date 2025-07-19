@@ -17,6 +17,7 @@ import {
 import { WagmiProvider } from 'wagmi';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { sepolia } from 'wagmi/chains';
+import ReceivePage from './pages/ReceivePage';
 
 const config = getDefaultConfig({
     appName: 'EventKey Web3 售票平台',
@@ -38,6 +39,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                             <Route path="/my-tickets" element={<MyTicketsPage />} />
                             <Route path="/resell" element={<ResellPage />} />
                             <Route path="/purchase" element={<PurchasePage />} />
+                            <Route path="/receive" element={<ReceivePage />} />
                         </Routes>
                     </BrowserRouter>
                 </RainbowKitProvider>
