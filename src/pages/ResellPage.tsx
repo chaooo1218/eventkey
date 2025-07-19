@@ -31,6 +31,7 @@ const ResellPage = () => {
                     backgroundColor: '#1f1c1c',
                     minHeight: '100vh',
                     width: '100vw',
+                    margin: 0,
                     padding: '100px 32px 32px',
                     color: '#ede8e8',
                 }}
